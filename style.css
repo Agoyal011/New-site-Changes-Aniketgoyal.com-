@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+
+.basic {
+  /* background-color: #1B2631; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 8px;
+}
+
+.basic a {
+  text-decoration: none;
+  color: #FFF;
+  border: 2px solid #FFF;
+  padding: 6px 24px;
+  margin-top: 12px; 
+}
+
+.basic a:hover {
+  color: #1B2631;
+  background-color: #FFF;
+}
+
+.first-container{
+
+  background-image: url(/home-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: left top, right;*/
+  height: 100vh;
+  overflow: hidden;
+  
+  width: 100%;
+  /* height: calc(100% - 63px); */
+
+}
+
+
+
+.main-container {
+ 
+  width: 100%;
+  /* height: calc(100% - 63px); */
+  background: linear-gradient(to top, rgba(0,0,0, 1), transparent); 
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.content-container {
+  width: 100%;
+  height: 90%;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:fixed;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row:nth-child(2) {
+  margin-top: 50px;
+}
+
+.row .content p {
+  width: 50%;
+  color: #FFF;
+  font-size: 20px;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  height: 200px;
+  margin-right: 25px;
+}
+
+.image-container img {
+  width: inherit;
+  height: inherit;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #a0a0a0;
+}
+
+
+
+.title {
+  color: #FFF;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.sub-title {
+  color: #FFF;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.social-container {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.social-container a {
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+}
+
+.social-container a:hover {
+  color: tan;
+}
+
+.blink {
+  animation: blink-frames 3s infinite;
+  margin-left: 4px;
+}
+
+.blink a {
+  text-decoration: none;
+  color: yellow;
+  font-weight: 700;
+}
+
+.blink a:hover {
+  cursor: pointer;
+  color: tan;
+}
+
+@keyframes blink-frames {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 900px) {
+  .linear-bg {
+    padding: 20px 10px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-container {
+    margin-right: 0;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-top: 12px;
+    justify-content: center;
+  }
+
+  .sub-title {
+    font-size: 22px;
+    justify-content: center;
+  }
+
+  .Job-information{
+    font-size: 22px;
+    justify-content: center;
+
+  }
+
+  .social-container a {
+    font-size: 22px;
+  }
+
+  .row .content p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .basic a {
+    padding: 6px 12px;
+    font-size: 12px;
+    margin-top: 2px;
+  }
+}
+
+.Job-information { 
+
+  color:#FFF;
+  font-size: 25px;
+  margin-top: 20px;
+
+}
+
+.Job-information a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  
+}
+
+.Job-information a:hover {
+  cursor: pointer;
+  color: tan;
+}
+
+
+
+  
+
+.myvision{
+  color:  white;
+  font-size: 25px;
+  margin-top: 180px;
+  margin-left: 10px;
+  text-align: left;
+  width: 50vw;
+  height: 100vh;
+  
+}
+
+.vision-firstline{
+
+  color:  white;
+  font-size: 25px;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 10px
+}
+
+.side-pic{
+
+
+  background-color: #202023;
+  width: 50%;
+  height: 110%;
+  position: relative;
+  right:0px;
+ 
+
+}
+
+
+
+.second-page{
+
+/*background-image: url(/PhotoRoom.jpg);
+background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: left top, right; */
+text-align: left;
+
+}
+
+.image_section{
+  width:100%;
+  padding:0;
+  margin: 0;
+  display: flex;
+  height:100vh;
+  background-color: #202023 !important;
+  font-style: normal;
+}
+
+.text_container{
+width: 50%;
+display: flex;
+flex-grow: 1;
+justify-content: center;
+align-items: center;
+padding: 100px;
+}
+
+.text_test {
+  max-width: 800px;
+  color: white;
+  font-weight: normal;
+  font-size: larger;
+}
+
+.myimage{
+width: 50vw;
+height:100vh;
+object-fit: fill;
+display: flex;
+}
+
+.image_class {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.carousel{
+  width: 100%;
+  height: 100%;
+}
+
+.footer-container{
+color: white;
+text-decoration: white;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 0px;
+
+}
+
+
