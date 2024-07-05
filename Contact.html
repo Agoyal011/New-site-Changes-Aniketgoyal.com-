@@ -1,12 +1,55 @@
-<form action="/action.php">
-<H2> Please enter your detailed information below for reaching out to me</H2>
-<input type="text" placeholder="Enter your first name ">
-<br>
-<input type="text" placeholder="Enter your last name">
-<br>
-<input type="text" placeholder="Enter your EMAIL ID">
-<br>
-<input type="text" placeholder="What service would you want from me">
-<br>
- 
-</form>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact</title>
+    <link rel="stylesheet" type="" href="style.css" />
+  </head>
+  <body>
+    <div class="contact-container">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="contact-left"
+      >
+        <div class="contact-left-title">
+          <h2>Get in Touch</h2>
+          <hr />
+        </div>
+        <input
+          type="hidden"
+          name="access_key"
+          value="ee0a8407-40bc-46c3-a01f-37a911154497"
+        />
+        <input
+          type="text"
+          name="name"
+          placeholder="Your name"
+          class="contact-inputs"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your email"
+          class="contact-inputs"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          class="contact-inputs"
+          required
+        ></textarea>
+        <button type="submit">
+          Submit <img src="assets/arrow_icon.png" alt="" />
+        </button>
+      </form>
+      <div class="contact-right">
+        <img src="/assets/right_img.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
