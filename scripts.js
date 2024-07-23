@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
           setTimeout(typeText, 60);
         } else {
           typing = false;
-          setTimeout(typeText, 200);
+          setTimeout(typeText, 400);
         }
       } else {
         if (charIndex > 0) {

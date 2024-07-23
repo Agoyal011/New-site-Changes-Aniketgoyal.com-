@@ -45,8 +45,8 @@
 .content {
   /* width: 50%; */
   color: #fff;
-  font-size: 30px;
-  
+  font-size: 40px;
+
   /* text-align: center; */
 }
 
@@ -64,16 +64,17 @@
 }
 .cursor1 {
   display: inline-block;
-  width: 8px;
-  animation: blink 0.7s step-end infinite;
+  width: 12px;
+  height: 12px;
+  animation: blink-frames 1s infinite;
 }
 
 .greeting-text {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .changingtext-container {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
   margin-top: 10px;
@@ -82,35 +83,26 @@
 
 .cursor {
   display: inline-block;
-  width: 10px;
-
+  width: 14px;
   font-weight: bold;
-  font-size: 35px;
+
   /* background-color: white; */
   animation: blink-frames 1s infinite;
 }
 
-/* @keyframes blink {
-  from, to {
-    background-color: white;
-  }
-  50% {
-    background-color: white;
-    
-  }
-} */
-
 .title {
-  color: #fff;
-  font-size: 40px;
   font-weight: bold;
 }
 
 .sub-title {
   color: #fff;
-  font-size: 20px;
+  font-size: 30px;
   text-transform: uppercase;
-  margin-top: 4px;
+  margin-top: 12px;
+}
+
+.Job-information .Job-information a {
+  font-size: 30px;
 }
 
 .social-container {
@@ -193,7 +185,6 @@
     font-size: 22px;
     justify-content: center;
     margin-top: 20px;
-    
   }
 
   .sub-title a {
@@ -214,7 +205,7 @@
     display: flex;
   }
 
-  .row .content{
+  .row .content {
     width: 100%;
     font-size: 24px;
     margin-top: 20px;
@@ -226,17 +217,15 @@
     margin-top: 10px;
   }
 
-  .greeting-text{
+  .greeting-text {
     font-size: 25px;
   }
-  .changingtext-container{
+  .changingtext-container {
     font-size: 25px;
   }
 }
 
-
 @media (max-width: 608px) {
-
   .Job-information a {
     font-size: 25px;
     align-items: center;
@@ -252,14 +241,11 @@
     text-align: center;
     white-space: nowrap;
     display: block;
-
+  }
+  .greeting-text {
+    font-size: 25px;
+  }
 }
-.greeting-text{
-  font-size: 25px;
-}
-}
-
-
 
 @media (max-width: 500px) {
   .Job-information,
@@ -275,7 +261,6 @@
     text-align: center;
     white-space: nowrap;
     display: block;
-
   }
   .sub-title,
   .sub-title a {
@@ -351,13 +336,27 @@
 }
 
 @media (max-width: 404px) {
-  .basic,
-  .basic a {
-    font-size: 9px;
+  .basic {
+    font-size: 15px;
+    padding: 0 10px;
+    white-space: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .changing-name {
+    font-size: 30px;
+    display: block;
+    white-space: wrap;
   }
 
   .changingtext-container {
-    font-size: 25px;
+    font-size: 30px;
+    display: block;
+    white-space: wrap;
   }
 
   .Job-information {
@@ -371,7 +370,7 @@
   }
 
   .Job-information a {
-    font-size: 13px;
+    font-size: 2px;
     white-space: wrap;
     align-items: center;
     justify-content: center;
@@ -382,6 +381,7 @@
 
   .sub-title {
     margin-top: 40px;
+    font-size: 15px;
   }
   .content {
     text-align: center;
@@ -392,13 +392,14 @@
 
 .Job-information {
   color: #fff;
-  font-size: 25px;
+  font-size: 30px;
   margin-top: 20px;
 }
 
 .Job-information a {
   text-decoration: none;
   color: white;
+  font-size: 30px;
   font-weight: 700;
 }
 
@@ -416,7 +417,8 @@
   gap: 10px;
   width: 100%;
   margin-top: 10px;
-  padding: 14px 8px;
+  padding: 20px 0px;
+  margin-right: 18px;
 }
 
 .basic a {
@@ -424,7 +426,6 @@
   color: #fff;
   border: 2px solid #fff;
   padding: 6px 24px;
-  margin-top: 12px;
 }
 
 .basic a:hover {
