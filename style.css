@@ -10,6 +10,7 @@ html {
   background-attachment: fixed;
 }
 
+html.dark-background,
 body.dark-background {
   background: #090909;
   background: linear-gradient(180deg, #080808 0%, #101010 100%);
@@ -84,6 +85,61 @@ body.dark-background .video_section {
   margin-right: 25px;
 }
 
+/* Layout for the intro + carousel row */
+.image_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  padding: 40px 20px;
+}
+
+.image_section .text_container {
+  flex: 1 1 420px;
+  display: flex;
+  align-items: center; /* vertical center the paragraph */
+}
+
+.image_section .myimage {
+  flex: 1 1 520px;
+  max-width: 620px;
+}
+
+@media (max-width: 900px) {
+  .image_section {
+    flex-direction: column;
+    padding: 24px 12px;
+    gap: 20px;
+  }
+  .image_section .text_container {
+    align-items: flex-start;
+    width: 100%;
+  }
+  .image_section .myimage {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Mobile stacking: ensure text appears before carousel */
+@media (max-width: 900px) {
+  .image_section .text_container {
+    order: 1;
+  }
+  .image_section .myimage {
+    order: 2;
+  }
+  .image_section .text_container .text_test {
+    text-align: left;
+  }
+  .image_section .myimage .carousel-inner img {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: cover;
+  }
+}
+
 .image-container img {
   width: 200px;
   height: 200px;
@@ -127,6 +183,25 @@ body.dark-background .video_section {
   font-size: 30px;
   text-transform: uppercase;
   margin-top: 12px;
+}
+
+/* Bio / intro paragraph styling */
+.text_test {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 620px;
+  color: #e6e6e6;
+  margin: 0 0 20px 0;
+  padding: 0 16px;
+}
+
+@media (max-width: 768px) {
+  .text_test {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 12px;
+    max-width: 100%;
+  }
 }
 
 .Job-information .Job-information a {
@@ -665,17 +740,25 @@ body.dark-background .video_section {
   overflow: hidden;
 }
 
-.image_class {
+.carousel-inner,
+.carousel-item {
   width: 100%;
-  height: auto;
   max-height: 520px;
-  object-fit: cover;
-  border-radius: 12px;
 }
 
-.carousel-inner {
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+
+.image_class {
   width: 100%;
-  max-height: 520px;
+  height: 520px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #000;
 }
 
 /* .carousel-item {
