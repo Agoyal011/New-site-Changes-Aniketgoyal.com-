@@ -703,6 +703,31 @@ body.dark-background .video_section {
   }
 }
 
+@media (max-width: 900px) {
+  .image_section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 12px;
+  }
+
+  .image_section .text_container,
+  .image_section .myimage {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 auto;
+    padding: 10px 0;
+  }
+
+  .image_section .text_container {
+    order: 1;
+  }
+
+  .image_section .myimage {
+    order: 2;
+  }
+}
+
 .image_section {
   width: 100%;
   max-width: 1300px;
