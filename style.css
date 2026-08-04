@@ -83,6 +83,18 @@ body.dark-background .video_section {
   width: auto;
   height: auto;
   margin-right: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(160, 160, 160, 0.4);
 }
 
 /* Layout for the intro + carousel row */
@@ -545,7 +557,6 @@ body.dark-background .video_section {
   .image-container {
     white-space: normal;
     text-align: center; /* Center the image horizontally if needed */
-    /* overflow-y: auto; Enable vertical scrolling */
     justify-content: center;
     align-items: center;
     margin-top: 20px;
@@ -556,10 +567,13 @@ body.dark-background .video_section {
   }
 
   .image-container img {
-    max-width: auto; /* Ensure the image does not exceed the width of its container */
-    height: 150px; /* Maintain the aspect ratio of the image */
-    width: 200px;
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
     display: block; /* Remove any inline spacing */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(160, 160, 160, 0.4);
   }
 
   .content {
