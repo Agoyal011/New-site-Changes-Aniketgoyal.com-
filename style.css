@@ -194,6 +194,8 @@ body.dark-background .video_section {
   color: #fff;
   font-size: 22px;
   margin-top: 12px;
+  padding: 0 16px;
+  box-sizing: border-box;
 }
 
 /* Bio / intro paragraph styling */
@@ -323,9 +325,9 @@ body.dark-background .video_section {
     margin-top: 20px;
   }
 
-  .sub-title a {
+  /*.sub-title a {
     margin-top: 20px;
-  }
+  }*/
 
   .Job-information {
     font-size: 22px;
@@ -400,7 +402,8 @@ body.dark-background .video_section {
   }
   .sub-title,
   .sub-title a {
-    padding: 0 15px;
+    padding: 0 16px;
+    box-sizing: border-box;
     display: block;
     white-space: wrap;
     align-items: center;
@@ -430,8 +433,11 @@ body.dark-background .video_section {
   .sub-title {
     font-size: 15px;
     text-align: center;
-    white-space: nowrap; /* Ensure sub-title does not wrap */
+    white-space: normal;
     margin-top: 10px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    width: 100%;
   }
 
   .sub-title a {
@@ -518,6 +524,11 @@ body.dark-background .video_section {
   .sub-title {
     margin-top: 40px;
     font-size: 15px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    white-space: normal;
   }
   .content {
     text-align: center;
