@@ -195,6 +195,28 @@ body.dark-background .video_section {
   padding: 0 16px;
 }
 
+.bio-prompt {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 20px;
+}
+
+.bio-note {
+  font-size: 16px;
+  color: #d4d4d4;
+  margin: 0;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 760px;
+}
+
+@media (max-width: 768px) {
+  .bio-note {
+    font-size: 15px;
+    padding: 0 12px;
+  }
+}
+
 @media (max-width: 768px) {
   .text_test {
     font-size: 16px;
