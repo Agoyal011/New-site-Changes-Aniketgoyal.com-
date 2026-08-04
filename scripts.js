@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const textElement = document.getElementById('changing-text');
-    const texts = ['I am a Data Engineer.', 'I am a Mechatronics Engineer.'];
+    const texts = ['I am a Sales Engineer.', 'I am a Mechatronics Engineer.'];
     let index = 0;
     let charIndex = 0;
     let typing = true;
